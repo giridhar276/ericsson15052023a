@@ -1,0 +1,306 @@
+https://codeshare.io/DZ1Kd3
+
+
+*** Everything in python is object ***
+*** Every object contains methods ***
+
+number
+-------
+number can be integer or decimal or octal or hexadecimal.
+
+val = 10
+aval = 34.43
+
+
+string
+--------
+string is defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "java programming"
+cname = """unix shell scripting"""
+
+
+
+list
+-------
+list contains set of elements.
+Elements can be numbers or strings or any combination
+
+alist = [10,34,4,3]
+blist = ['python','java','scala',34,43,45.34]
+clist = [['a','b'],['c','d'],['e','f']]   # list of lists
+dlist = [{'chap1':10,'chap2':20},{'chap3':30,'chap4':40} ]  # list of dictionaries
+
+
+
+tuple  ( immutable , uneditable , unchangeable)
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination
+**** elements inside tuple cannot be modified ***
+
+atup = (20,30,40)
+btup = ('python','java','scala',34,43,45.34)
+ctup = (['a','b'],['c','d'],['e','f'] )
+
+finaltuple = (atup,btup)
+
+
+
+
+dictionary ( json , hashmap , hash )
+------------
+dictionary contains elemnets in form of keys and values.
+In dictionary , key is either number or string used to identify the value.
+             value can be integer or string or list or tuple or dictionary or any complex dictionary
+
+syntax:    object = { key:value , key:value, key:value }
+example:    book  = {"chap1":10 ,"chap2":20 ,"chap3":30}
+          bookinfo= {"chap1":[10,20],"chap2":[30,40] }
+            data = {10:20 ,30:40}
+
+
+
+
+
+
+set
+-------
+set is unordered collection of unique values of same type.
+
+aset = {10,10,10,20,30,30,30}
+
+
+
+
+
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+level1
+level1
+
+classification of objects
+-----------------------
+
+
+
+mutable objects  :    list , dictionary ,set
+immutable objects:    number,string,tuple
+
+
+
+
+
+functions | definition | subroutine
+-------------------------------------
+
+-modular programming
+-functions are for code reusability.
+-we define function once and call it for multiple times
+
+
+
+- builtin functions
+- user defined functions
+
+
+builtin functions
+---------------------
+
+to list all the builtin functions .. in the console   dir(__builtin__)
+
+
+
+
+
+
+
+
+file handling
+-------------
+
+
+working with flat files ( txt csv conf log .properties tsv json xml yml )
+
+
+working with third party files ( xlsx docx ppt gif .rar .zip .7z  .mp4 )
+
+
+
+
+working with flat files
+--------------------------
+
+
+opening the file
+-------------------
+-read mode
+-write mode
+-append mode
+
+
+syntax;  object = open(filename,mode)
+         object = open('abc.txt','r')
+         object = open('abc.txt','w')
+         object = open('abc.txt','a')
+
+
+
+
+
+
+closing the file
+-----------------
+object.close()
+
+
+
+
+exception handling
+-------------------
+
+There are 2 types of errors
+
+- syntax error
+-semantic error or logical error
+
+handling the errors that occurs during runtime is known as exception handling.
+
+
+try     -- mandate
+except  -- mandate
+else    -- optional
+finally -- optional
+
+
+user defined function | definition | subroutine | block
+-------------------------------------------------------
+
+- code reusability
+
+
+
+
+
+
+
+library | package 
+-------------------
+Every library contains set of methods of some particular task.
+
+
+bulitin libraries
+-------------------
+builtin libraries comes along with python which are generally used(datetime manipulations, OS level tasks, math operations,.....) by everyone.
+
+
+
+
+third party libraries
+------------------------
+Depending on the requirement( Database , cloud , analytics , ML , network autmations .... ) developer has to install
+the third party libraries from
+
+- downloading and installing it manually.
+- installing using pip tool.
+
+
+
+
+re library
+--------------
+- search for patterns
+- match for the patterns ( at the beginning )
+- replace the patterns 
+- split the string
+
+re.search()
+re.match()
+re.sub()
+re.split()
+
+metacharacters or wildcard characters
+----------------------------------------
+
+
+^ :  at the beginning of the string
+     re.search('^python',line)
+
+$ : at the end of the string
+    re.search('python$',line)
+
+
++ :  one or more occurences of the preceding character
+     re.search('pyt+hon',line)
+
+
+* :  zero or more occurences of the preceding character
+     re.search('pyt*hon',line)
+
+. :  any single charcter or digit
+     re.search('.ython',line)
+
+?  : either zero or one occurence of the preceding character
+     re.search('py?hon',line)      #  python    # pyhon
+
+{} : min to max occurence of the preceding character
+     re.search('pyt{2,5}hon',line)
+
+
+[] : one single character in []
+     re.search('py[tqy]hon',line)     # python   # pyqhon  # pyyhon
+
+
+() : (word1|word2)
+     re.search('python|spark', line)  # display lines with either word1 or word2
+
+\s : whitespaces
+\w : word boundary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
